@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../../styles/Burger.module.css";
 
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:5000/items");
+  const res = await fetch("https://62c33b22ff594c65677068ff.mockapi.io/burgers");
   const data = await res.json();
 
   return {

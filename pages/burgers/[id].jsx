@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "../../styles/Burger.module.css";
 
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:5000/items");
+  const res = await fetch("https://62c33b22ff594c65677068ff.mockapi.io/burgers");
   const data = await res.json();
 
   const paths = data.map((burger) => {
@@ -19,7 +19,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
-  const res = await fetch(`http://localhost:5000/items/${id}`);
+  const res = await fetch(`https://62c33b22ff594c65677068ff.mockapi.io/burgers/${id}`);
   const data = await res.json();
 
   return {
