@@ -5,11 +5,12 @@ const Header = () => {
   return (
     <header>
       <div>
-        <Link href="/">
-          <GiHamburger style={{ cursor: "pointer" }} />
-        </Link>
+        <GiHamburger />
       </div>
       <nav>
+        <Link href="/">
+          <a>Главная</a>
+        </Link>
         <Link href="/burgers">
           <a>Бургеры</a>
         </Link>
