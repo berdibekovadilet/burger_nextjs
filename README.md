@@ -1,6 +1,6 @@
 # Next JS Burger App
 # Live
-https://casiowatch.netlify.app/
+https://burger-nextjs.vercel.app/
 
 # Covers
 ![cover](cover/1.png)
