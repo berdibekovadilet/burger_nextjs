@@ -1,3 +1,13 @@
+# Next JS Burger App
+# Live
+https://casiowatch.netlify.app/
+
+# Covers
+![cover](cover/1.png)
+![cover2](cover/2.png)
+![cover2](cover/3.png)
+![cover2](cover/4.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
