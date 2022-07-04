@@ -31,7 +31,7 @@ export default function Home() {
           Варенье придает крабсбургеру удивительно приятный вкус.
         </p>
         <Link href="/burgers">
-          <a className={styles.btn}>Бургеры</a>
+          <a className={styles.btn}> Выбрать бургер</a>
         </Link>
       </div>
     </>
