@@ -22,6 +22,7 @@ a {
   border: 5px solid white;
   padding: 20px;
   background: #fff;
+  border-radius: 8px;
 }
 header {
   display: flex;

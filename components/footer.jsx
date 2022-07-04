@@ -1,5 +1,5 @@
 const Footer = () => {
-  return <footer>Copyrigth 2022 - Fat Burger</footer>;
+  return <footer>(с) Копирайт 2022г - Красти Краб </footer>;
 };
 
 export default Footer;
