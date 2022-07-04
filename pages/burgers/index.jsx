@@ -15,28 +15,33 @@ const Burgers = ({ burgers }) => {
   return (
     <div>
       <h1>Наши бургеры</h1>
-      {burgers.map((burger) => {
-        return (
-          <Link href={`/burgers/${burger.id}`} key={burger.id}>
-            <a className={styles.burgerCard}>
-              <div className={styles.imageContainer}>
-                <Image
-                  src={`${burger.image}`}
-                  alt={`${burger.name}`}
-                  width="100%"
-                  height="120%"
-                  layout="responsive"
-                  objectFit="fill"
-                />
-              </div>
-              <div>
-                <h3>{burger.name}</h3>
-                <p>{burger.desc}</p>
-              </div>
-            </a>
-          </Link>
-        );
-      })}
+     
+        {burgers.map((burger) => {
+          return (
+            <Link href={`/burgers/${burger.id}`} key={burger.id}>
+              <a className={styles.burgerCard}>
+                <div className={styles.imageContainer}>
+                  <Image
+                    src={`${burger.image}`}
+                    alt={`${burger.name}`}
+                    width="100%"
+                    height="120%"
+                    layout="responsive"
+                    objectFit="cover"
+                  />
+                </div>
+                <div>
+                  <h3>{burger.name}</h3>
+                  <p>{burger.desc}</p>
+                  <p>
+                    <b>{burger.price} руб</b>
+                  </p>
+                </div>
+              </a>
+            </Link>
+          );
+        })}
+     
     </div>
   );
 };
